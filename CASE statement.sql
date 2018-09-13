@@ -6,3 +6,5 @@ WHEN TOTAL_AMOUNT < 1000 THEN 'Medium'
 ELSE 'High'
 END
 FROM sales;
+
+-- ihi
