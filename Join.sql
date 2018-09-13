@@ -99,11 +99,13 @@ salesperson.job_title,
 customer.first_name, customer.last_name
 from sales inner join product
 on sales.product_id = product.product_id
-left outer join salesperson
+left outer join salesperson -- return all elements of left table and only elements of the other table that meet the join condition
 on sales.salesperson_id = salesperson.salesperson_id
-full outer join customer
+full outer join customer --return all elements of both left and right tables
 on sales.customer_id = customer.customer_id
 where salesperson.job_title = 'East Manager'; -- filter only East Manager
+
+
 
 
 
